@@ -15,8 +15,7 @@ services:
     depends_on:
       - esbuild
     build:
-      context: .
-      dockerfile: Dockerfile.jekyll
+      context: _docker/jekyll
     volumes:
       - .:/site
     ports:
